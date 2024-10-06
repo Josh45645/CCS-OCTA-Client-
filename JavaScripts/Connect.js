@@ -41,7 +41,7 @@ document.getElementById("messageForm").addEventListener("submit", function(event
                 "Content-Type": "application/json",
                 "Authorization-Key": "CCS-OCTA-Server"
             },
-            body: JSON.stringify(postData)
+            body: (postData)
         })
         .then(response => {
             if (!response.ok) {
