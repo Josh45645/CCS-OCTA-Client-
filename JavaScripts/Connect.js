@@ -37,6 +37,11 @@ document.getElementById("messageForm").addEventListener("submit", function(event
         // Send data to the API
         fetch('https://ccs-octa-server-alpha.onrender.com/api/freedomwall/', {
             method: "POST",
+
+            withCredentials: true,    
+            crossorigin: true,    
+            mode: 'no-cors',
+            
             headers: {
                 "Content-Type": "application/json",
                 "Authorization-Key": "CCS-OCTA-Server"
