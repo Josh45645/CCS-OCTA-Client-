@@ -18,7 +18,7 @@ document.getElementById("messageForm").addEventListener("submit", function(event
     if (!toWhom || !message || !themeId || selectedTags.length === 0) {
         // Show validation modal
         document.getElementById('validationModal').style.display = 'block';
-        return; // Exit the function if validation fails
+        return; 
     }
 
     // Show confirmation modal
@@ -53,7 +53,7 @@ document.getElementById("messageForm").addEventListener("submit", function(event
         })
         .then(data => {
             console.log("Success:", data);
-            showModal("Message posted successfully!"); // Show success message
+            showModal("Message posted successfully!"); 
             document.getElementById("messageForm").reset(); // Reset the form after successful submission
 
             // Reset the selected theme color
@@ -66,8 +66,8 @@ document.getElementById("messageForm").addEventListener("submit", function(event
             const tagButtons = document.querySelectorAll('.btntags');
             tagButtons.forEach((btn) => {
                 btn.classList.remove('selected'); // Remove selected class from all tags
-                btn.style.backgroundColor = ''; // Reset to default background color
-                btn.style.color = ''; // Reset to default text color
+                btn.style.backgroundColor = ''; 
+                btn.style.color = ''; 
             });
         })
         .catch((error) => {
