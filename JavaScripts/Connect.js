@@ -28,12 +28,20 @@ document.getElementById("messageForm").addEventListener("submit", function(event
     document.getElementById("confirmSubmit").onclick = function() {
         // Construct the request body
         const postData = {
-            Towhom: toWhom,
+            Towhom: toWhom,                  
             Message: message,
             Theme: themeId,
             Tags: selectedTags
         };
-
+    
+          /*if form data
+          const formData = FormData();
+              formData.append('ToWhom',toWhom);
+              formData.append('Message',message);
+              formData.append('Theme',themeid);
+                selectedTags.forEach(tag=>formData.append('Tags[]',tag));
+          */
+        
         // Send data to the API
         fetch('https://ccs-octa-server-alpha.onrender.com/api/freedomwall/', {
             method: "POST",
