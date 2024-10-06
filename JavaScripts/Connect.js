@@ -5,6 +5,7 @@ const headers = {
   "Authorization-Key": "CCS-OCTA-Server"
 }; //For fast editing of authorization key
 
+
 // Handle form submission
 document.getElementById("messageForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Prevent the default form submission
@@ -60,6 +61,79 @@ document.getElementById("messageForm").addEventListener("submit", function(event
         const colorButtons = document.querySelectorAll('.themecolors .color');
         colorButtons.forEach((btn) => {
           btn.classList.remove('selected'); // Remove selected class from all theme colors
+
+    // Get selected tags
+    const selectedTags = Array.from(document.querySelectorAll(".btntags.selected"))
+                                .map(tag => tag.getAttribute("data-tag-id"));
+
+    // Validate form fields
+    if (!toWhom || !message || !themeId || selectedTags.length === 0) {
+        // Show validation modal
+        document.getElementById('validationModal').style.display = 'block';
+        return; 
+    }
+
+    // Show confirmation modal
+    document.getElementById('confirmationModal').style.display = 'block';
+
+    // Handle confirmation of submission
+    document.getElementById("confirmSubmit").onclick = function() {
+        // Construct the request body
+        const postData = {
+            Towhom: toWhom,                  
+            Message: message,
+            Theme: themeId,
+            Tags: selectedTags
+        };
+    
+          /*if form data
+          const formData = FormData();
+              formData.append('ToWhom',toWhom);
+              formData.append('Message',message);
+              formData.append('Theme',themeid);
+                selectedTags.forEach(tag=>formData.append('Tags[]',tag));
+          */
+        
+        // Send data to the API
+        fetch('https://ccs-octa-server-alpha.onrender.com/api/freedomwall/', {
+            method: "POST",
+
+            
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization-Key": "CCS-OCTA-Server"
+            },
+            body: (postData)
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log("Success:", data);
+            showModal("Message posted successfully!"); 
+            document.getElementById("messageForm").reset(); // Reset the form after successful submission
+
+            // Reset the selected theme color
+            const colorButtons = document.querySelectorAll('.themecolors .color');
+            colorButtons.forEach((btn) => {
+                btn.classList.remove('selected'); // Remove selected class from all theme colors
+            });
+
+            // Reset the selected tags
+            const tagButtons = document.querySelectorAll('.btntags');
+            tagButtons.forEach((btn) => {
+                btn.classList.remove('selected'); // Remove selected class from all tags
+                btn.style.backgroundColor = ''; 
+                btn.style.color = ''; 
+            });
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+            showModal("An error occurred: " + error.message); // Show error message
+
         });
 
         // Reset the selected tags
