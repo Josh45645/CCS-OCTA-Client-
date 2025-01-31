@@ -42,7 +42,7 @@ form h1{
 
 body{ 
   max-width: 100%;
-  background-image: url(/Freedomwall/Freedomwall_Form/Images/Background.png);
+  background-image: url('../Images/Background.png');
   background-size: 195vh;
   background-repeat: no-repeat;
 
