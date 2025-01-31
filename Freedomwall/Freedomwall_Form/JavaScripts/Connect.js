@@ -72,15 +72,15 @@ document.getElementById("messageForm").addEventListener("submit", function(event
 
     // Construct the request body
 
-    const postData = {
+   const postData = {
 
-      "ToWhom": toWhom,
+      "toWhom": toWhom,
 
-      'Message': message,
+      'message': message,
 
-      "Theme": themeId,
+      "theme": themeId,
 
-      "Tags": selectedTags
+      "tags": selectedTags
 
     };
 
