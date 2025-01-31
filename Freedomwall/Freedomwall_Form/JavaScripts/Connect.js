@@ -92,7 +92,7 @@ document.getElementById("messageForm").addEventListener("submit", function(event
 
         method: "POST",
 
-        url: "https://ccs-octa-server.vercel.app/docs",
+        url: "https://ccs-octa-server.vercel.app/api/freedomwall",
 
         headers,
 
