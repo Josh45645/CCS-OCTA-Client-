@@ -1,0 +1,193 @@
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 1001;
+  
+}
+nav ul{
+    float: left;
+    padding: 20px;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    font-size: 0.7rem;
+}
+nav li a{
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    color: black;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: #F06336;
+    transition: all 0.4s ease 0s;
+    
+    
+}
+
+
+.small-logo{
+    display: flex;
+    margin-right: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-logo img{
+    height: 3.3rem;
+    width: auto;
+}
+
+.small-logo h1{
+    font-family: 'Poppins';
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin-left: 10%;
+}
+
+.navbar .btn1, .btn2{
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+    color: #ff8c69;
+    border-color: var(--third-color);
+}
+.Hamburger {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 1001;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%); 
+  transition: transform .3s ease-out, opacity 0.5s ease-out;
+  opacity: 0; 
+  visibility: hidden; 
+}
+
+.Hamburger.open {
+  transform: translateX(0); 
+  opacity: 1; 
+  visibility: visible; 
+}
+
+.Hamburger li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 2vh 0 3vh 0;
+  font-size: medium;
+}
+
+.Hamburger .btn2 {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 2vh 0 3vh 3vh;
+  font-size: medium;
+}
+  
+  .displayHam{
+display:none;
+
+  }
+  
+  
+  .btn1:hover, .btn2:hover {
+    animation: rotate624 0.7s ease-in-out both;
+  }
+  
+  .btn1:hover span, .btn2:hover span {
+    animation: storm1261 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+  
+  @keyframes rotate624 {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+  
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+  
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+  
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes storm1261 {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+  
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+  
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+  
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }
+  
+  .btn1 , .btn2{
+    border: 1px solid;
+    overflow: hidden;
+    position: relative;
+    margin-top: 1.6vh;
+  }
+  
+  .btn1 span, .btn2 span {
+    z-index: 20;
+  }
+  
+  .btn1:after, .btn2:after {
+    background: var(--fifth-bg-color);
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.4;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+  }
+  
+  .btn1:hover:after, .btn2:hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
