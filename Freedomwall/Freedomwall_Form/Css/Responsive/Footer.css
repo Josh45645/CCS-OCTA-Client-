@@ -1,138 +1,122 @@
-
-@media (max-width: 768px) {
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
     footer {
-        padding: 0.5rem; 
-        height: auto;    
-        margin-top: 2rem;
-        bottom: -90%;
+        padding-top: 1.5rem;
+        height: auto;
+    }
+
+    #footer{
+        padding-top: 55rem;
     }
 
     .rows {
         flex-direction: column;
         margin: 0;
-        align-items: center;
+        padding: 0 1rem;
         text-align: center;
     }
 
-    .about p {
+    .about p, .list, .getintouch {
         margin: 0;
-        max-width: 85%; 
+        padding: 0.5rem;
         text-align: center;
     }
 
-    .getintouch {
-        margin: 0.5rem 0; 
-        text-align: center;
+    .logos h2 {
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+        margin: 5% 0 0 5%;
     }
 
-    .terms {
-        flex-direction: column;
-        padding: 0.5rem; 
-        align-items: center;
-        gap: 0.5rem;      
+    .logos {
+        margin: 0 30% 0 30%;
     }
-}
-
-
-@media (max-width: 480px) {
-    footer {
-        padding: 0.3rem;  
-        height: auto;     
-        margin-top: 1.5rem;display: flex;
-        justify-content: center;
-        align-items: center; 
-        bottom: -90%;
-
-    }
-    .about{
-
-        margin-top: 3vh;
-    }
-   
     
-    .log{
-        margin-top: 2vh;
-        font-size: 1.5rem;
-    }
-    .social  {
-        font-size: 2rem; 
-        padding-right: 0.4rem;
-        margin-left: 10vw;
+    
+ 
+    .list a {
+       
+        margin: 0.5rem .5rem;
+        
     }
 
-    hr {
-        width: 75%;  
-        margin: 0.6rem auto;
+    .list{
+        margin: -50% 0 0 0;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .listnav{
+        font-size: large;
+        
+    }
+    .parentnav h3{
+        margin: 5% 0 0 10%;
+    }
+
+    
+    .getintouch h3{
+        margin: 10% 0 0 17% ;
+        text-wrap: nowrap;
+    }
+
+    .social a i {
+        font-size: 1.5rem;
+        padding-right: 0.5rem;
     }
 
     .terms {
         flex-direction: column;
-        align-items: center;
-        gap: 0.4rem;
-        padding: 0.5rem;  
-        
+        padding: 1rem 0 1rem 0;
+        text-align: center;
+        display: flex;
     }
 
     .terms h4 {
-        font-size: 0.8rem;  
+        font-size: 1rem;
     }
 
-    .rows .listnav {
-        padding: 0.4rem 0;
-    }
-
-    .about p {
-        max-width: 90%;  
-    }
     
-
-    .list ,.listnav {
-        margin-top: 5vh;
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        font-size: large;
-        
-    }
-   
-    
-
-    .list  {
-        font-size: 0.7rem; 
-        margin: 0 0 0 5vw;
-    }
-    .about p {
-        margin: 0;
-        max-width: 85%;
-        text-align: center;
-        text-wrap: balance;
-        font-size: small;
-        margin-left: 7vw
-    }
-    .getintouch{
-
-        margin: 10vh 25vw vh 0;
-    }
-    .getintouch h3{
-        font-size: large;
-        margin: 2vh 0 0 20vw;
-        
-        
-    }
-    .about h2 img{
-        font-size: medium;
-
-    }
-    
-    .logos{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    .about .flogo{
-    height: 3.2rem;
-    width: 3.2rem;
     
 }
+
+/* Media Query for Tablets */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    footer {
+        padding-top: 2rem;
+        height: auto;
+    }
+
+    .rows {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .about p, .list, .getintouch {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .logos h2 {
+        font-size: 1.4rem;
+    }
+
+    .list a {
+        margin-right: 2em;
+        font-size: 0.9rem;
+    }
+
+    .social a i {
+        font-size: 1.8rem;
+    }
+
+    .terms {
+        flex-direction: row;
+        padding: 1.5rem;
+    }
+
+    .terms h4 {
+        font-size: 1.2rem;
+        
+    }
 }

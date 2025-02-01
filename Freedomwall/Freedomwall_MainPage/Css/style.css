@@ -5,13 +5,14 @@
 }
 
 body{
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     width: 100%;
     height: 100%;
 
 }
 html{
 scroll-behavior: smooth;
+
 }
 
 /* DONT DELETE */
@@ -69,9 +70,9 @@ scroll-behavior: smooth;
     width: 70%;
     border-radius: 3rem;
     margin: 4vh 20vh 7vh 30vh;
-    padding: 6vh 0 4vh 10vh;
+    padding: 6vh 0 30vh 10vh;
     max-height: 35vh;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     box-shadow: 0 0.5px 0.5px 1px rgba(255, 255, 255, 0.2),
     0 10px 20px rgba(0, 0, 0, 0.2), 0 4px 5px 0px rgba(0, 0, 0, 0.05);
    }
@@ -103,7 +104,7 @@ scroll-behavior: smooth;
 
 .conbout .about {
     float: right;
-    margin-top: -5rem;
+    margin-top: -8rem;
     
 }
 
@@ -126,7 +127,7 @@ scroll-behavior: smooth;
     background-color: #343235;
     color: white;
     text-align: center;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
 .CYN .CYN-About{
@@ -136,14 +137,14 @@ scroll-behavior: smooth;
 }
 
 .CYN-About h1{
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 4rem;
     padding-bottom: vh;
 }
 
 .CYN-About p{
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-size: 0.9rem;
     padding-top: 2vh;
 }
@@ -188,13 +189,13 @@ scroll-behavior: smooth;
    }
 
    .freedompostContainer h1{
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     padding-bottom: 2vh;
    }
 
    .freedompostContainer p{
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 1rem;
    }

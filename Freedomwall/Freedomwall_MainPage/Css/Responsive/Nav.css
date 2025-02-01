@@ -1,4 +1,9 @@
 
+.currentPage{
+    color: #F06336;
+  
+  }
+
 /* DONT DELETE Constant na tong css for Hamburger */
 
 @media (max-width: 768px) {
@@ -11,7 +16,7 @@
         display: block;
         
     }
-
+   
 
         .small-logo {
             margin: 2vh auto 0 2%;

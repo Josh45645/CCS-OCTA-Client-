@@ -18,7 +18,7 @@ nav li{
     font-size: 0.7rem;
 }
 nav li a{
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     padding: 0px 10px;
@@ -30,6 +30,11 @@ nav li a:hover{
     transition: all 0.4s ease 0s;
     
     
+}
+
+.currentPage{
+  color: #F06336;
+
 }
 
 
@@ -46,14 +51,14 @@ nav li a:hover{
 }
 
 .small-logo h1{
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-size: 2.1rem;
     font-weight: bold;
     margin-left: 10%;
 }
 
 .navbar .btn1, .btn2{
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-size: 12px;
     font-weight: bold;
     padding: 10px 10px 10px 10px;

@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
@@ -36,7 +36,7 @@ form h1{
     font-size: 26px;
     font-weight: bold;
     letter-spacing: 2px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     
 }
 
@@ -45,6 +45,7 @@ body{
   background-image: url('../Images/Background.png');
   background-size: 195vh;
   background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
 
   
 }
@@ -84,7 +85,7 @@ body{
   .colortheme h3{
     margin: 40px 0 20px 0;
     text-align: center;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
   }
 
 
@@ -143,7 +144,7 @@ body{
 .btntags {
   
     font-size: 0.7rem;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     color: #fafafa;
     text-transform: uppercase;
     padding: 10px 15px 10px 15px;
@@ -180,7 +181,7 @@ body{
   .tags h3{
     margin: 40px 0 20px 0;
     text-align: center;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
   }
 
   .btntags.selected {
@@ -252,7 +253,7 @@ body{
 
 /* Start of form Css */
   #forms{
-    position: absolute;
+    position: absolute; 
     top: 10%;
     right: 35%;
     border: 4px solid black;
@@ -270,7 +271,7 @@ body{
   }
 
   .forms label{
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
     padding-left: 30px;
@@ -285,7 +286,7 @@ body{
     height: 1.7rem;
     margin: 10px 0 0 30px;
     padding-left:10px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
   }
 
   .forms textarea{
@@ -293,7 +294,7 @@ body{
     border-radius: 1.5rem;
     margin: 10px 0 0 30px;
     padding: 5px 0 0 10px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
   }
 
 

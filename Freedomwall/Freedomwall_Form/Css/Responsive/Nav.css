@@ -1,3 +1,11 @@
+
+/* DONT DELETE Constant na tong css for Hamburger */
+
+.currentPage{
+    color: #F06336;
+  
+  }
+
 @media (max-width: 768px) {
    
     .mainbar{
@@ -6,6 +14,7 @@
     .displayHam{
 
         display: block;
+        
     }
 
 
@@ -33,12 +42,13 @@
             width: 55%;
             height: 500%;
             right: 0; 
-            left: auto; 
+            left: auto;
+            
         }
     
         .Hamburger li {
             font-size: small;
-            margin-left: 2vh;
+            margin-left: 2vh
         }
     }
 
@@ -49,6 +59,7 @@
 @media (max-width: 480px) {
     .small-logo {
         margin: 2vh auto 0 2%;
+        display: flex;
         flex-direction: row; 
         justify-content: flex-start; 
     }
@@ -70,12 +81,17 @@
     .Hamburger {
         right: 0;  
         left: auto; 
-        width: 50%px;
+        width: 50%;
 
     }
 
     .Hamburger li {
         font-size: small;
         margin-left: 2vh;
+    }
+
+    .humburger_content{
+
+        margin: -30% 0 0 0;
     }
 }

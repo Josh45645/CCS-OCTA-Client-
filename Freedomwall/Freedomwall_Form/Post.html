@@ -32,7 +32,7 @@
 
 
 
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -52,116 +52,64 @@
 
 <body>
 
-
-
+ <!-- Main Navigation Bar -->
+ <nav class="navbar">
+  <div class="small-logo">
+    <a href="#">
+      <img src="images/Octa.png" alt="Logo">
+    </a>
+    <h1>O.C.T.A</h1>
   </div>
 
-  <!--Main Nav Bar-->
+  <div class="mainbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li ><a href="../Freedomwall_MainPage/MainPage.html"class="currentPage" >Freedom Wall</a></li>
+      <li><a href="#Events">Events</a></li>
+      <li><a href="#News">News</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#About">About</a></li>
+    </ul>
+    <button class="btn1"><span>Join OCTA</span></button>
+  </div>
 
-  <nav class="navbar">
+  <div class="displayHam" id="hamburger-toggle">
+    <a href="#"><svg fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.75 24.75"
+       style="width: 1.5rem; height: auto; fill: #ff8c6979; margin: 2.5vh 15vw 0 0;">
+        <g>
+          <path d="M0,3.875c0-1.104,0.896-2,2-2h20.75c1.104,0,2,0.896,2,2s-0.896,2-2,2H2C0.896,5.875,0,4.979,0,3.875z M22.75,10.375H2
+                c-1.104,0-2,0.896-2,2c0,1.104,0.896,2,2,2h20.75c1.104,0,2-0.896,2-2C24.75,11.271,23.855,10.375,22.75,10.375z M22.75,18.875H2
+                c-1.104,0-2,0.896-2,2s0.896,2,2,2h20.75c1.104,0,2-0.896,2-2S23.855,18.875,22.75,18.875z"/>
+        </g>
+      </svg>
+    </a>
+  </div>
+ <!-- End of Navigation Bar -->
 
-    <div class="small-logo">
-
-      <a href="#">
-
-        <img src="Images/OCTA.png" alt="Logo">
-
-      </a>
-
-      <h1>O.C.T.A</h1>
-
-    </div>
-
-
-
-    <div class="mainbar">
-
-      <ul>
-
+  <!-- Nav for Mobile Hamburger -->
+  <div class="Hamburger" id="hamburger-menu">
+    <ul>
+      <li id="close-hamburger"><a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" 
+                    style="width: 3rem; height: auto; fill: #ff8c6979;" />
+          </svg>
+        </a>
+      </li>
+      <div class="humburger_content">
         <li><a href="#">Home</a></li>
-
-        <li><a href="../Freedomwall_MainPage/MainPage.html">Freedom Wall</a></li>
-
+        <li ><a href="../Freedomwall_MainPage/MainPage.html" class="currentPage">Freedom Wall</a></li>
         <li><a href="#Events">Events</a></li>
-
         <li><a href="#News">News</a></li>
-
         <li><a href="#Projects">Projects</a></li>
-
         <li><a href="#About">About</a></li>
-
-      </ul>
-
-      <button class="btn1"><span>Join OCTA</span></button>
-
-    </div>
-
-
-
-    <div class="displayHam" id="hamburger-toggle">
-
-      <a href="#"><svg fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.75 24.75" style="width: 1.5rem; height: auto; fill: #ff8c6979; margin: 2.5vh 15vw 0 0;">
-
-          <g>
-
-            <path d="M0,3.875c0-1.104,0.896-2,2-2h20.75c1.104,0,2,0.896,2,2s-0.896,2-2,2H2C0.896,5.875,0,4.979,0,3.875z M22.75,10.375H2
-
-                      c-1.104,0-2,0.896-2,2c0,1.104,0.896,2,2,2h20.75c1.104,0,2-0.896,2-2C24.75,11.271,23.855,10.375,22.75,10.375z M22.75,18.875H2
-
-                      c-1.104,0-2,0.896-2,2s0.896,2,2,2h20.75c1.104,0,2-0.896,2-2S23.855,18.875,22.75,18.875z" />
-
-          </g>
-
-        </svg>
-
-      </a>
-
-    </div>
-
-    <!--End of Main Nav Bar-->
-
-    <!-- Nav for Mobile Hamburger -->
-
-    <div class="Hamburger" id="hamburger-menu">
-
-      <ul>
-
-        <li id="close-hamburger"><a href="#">
-
-            <svg xmlns="http://www.w3.org/2000/svg">
-
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" style="width: 3rem; height: auto; fill: #ff8c6979;" />
-
-            </svg>
-
-          </a>
-
-        </li>
-
-        <li><a href="#">Home</a></li>
-
-        <li><a href="../Freedomwall_MainPage/MainPage.html">Freedom Wall</a></li>
-
-        <li><a href="#Events">Events</a></li>
-
-        <li><a href="#News">News</a></li>
-
-        <li><a href="#Projects">Projects</a></li>
-
-        <li><a href="#About">About</a></li>
-
         <button class="btn2"><span>Join OCTA</span></button>
-
+      
+      </div>
       </ul>
-
-
-
-    </div>
-
-    <!--End of Mobile Nav Bar-->
-
-  </nav>
-
+    
+  </div>
+</nav>
 
 
   <!--Forms -->
@@ -277,122 +225,58 @@
   </section>
 
 
+   <!--Footer-->
 
-  </section>
-
-
-
-  <section id="footer">
-
-    <footer>
-
-      <div class="footer-content">
-
+    <section id="footer">
+   <footer>
+    <div class="footer-content">
         <div class="rows">
-
-          <div class="about">
-
-            <div class="logos">
-
-              <a href="#">
-
-                <img src="Images/OCTA.png" class="flogo">
-
-              </a>
-
-              <h2>O.C.T.A</h2>
-
+            <div class="about">
+                <div class="logos">
+                    <a href="#">
+                        <img src="images/Octa.png" class="flogo">
+                    </a>
+                   <h2>O.C.T.A</h2>
+                </div>
+               <p>Here at O.C.T.A, we like to unite our voices, embrace diversity, and drive forward the progress of computing and technology advancement.
+                 We want to create an inclusive, supportive community where everyone feels heard.
+               </p>
             </div>
+            
 
-            <p>Here at O.C.T.A, we like to unite our voices, embrace diversity, and drive forward the progress of computing and technology advancement.
+            
+               <div class="parentnav">
+                <h3 class="listnav">Navigation</h3>
+                <div class="list">
+                    <a href="../Freedomwall_MainPage/MainPage.html"><p>Freedom Wall</p></a>
+                    <a href="#"><p>Events</p></a>
+                    <a href="#"><p>News</p></a>
+                    <a href="#"><p>Projects</p></a>
+                    <a href="#"><p>About</p></a>
+                </div>
 
-              We want to create an inclusive, supportive community where everyone feels heard.
-
-            </p>
-
-          </div>
-
-
-
-
-
-          <h3 class="listnav">Navigation</h3>
-
-          <div class="list">
-
-            <a href="../Freedomwall_MainPage/MainPage.html">
-
-              <p>Freedom Wall</p>
-
-            </a>
-
-            <a href="#">
-
-              <p>Events</p>
-
-            </a>
-
-            <a href="#">
-
-              <p>News</p>
-
-            </a>
-
-            <a href="#">
-
-              <p>Projects</p>
-
-            </a>
-
-            <a href="#">
-
-              <p>About</p>
-
-            </a>
-
-          </div>
-
-
-
-
-
-          <div class="getintouch">
-
-            <h3>Get In Touch</h3>
-
-            <div class="social">
-
-              <a href="#"><i class="fa-brands fa-github"></i></a>
-
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-
+               </div>
+              
+            
+            <div class="getintouch">
+                <h3>Get In Touch</h3>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
             </div>
-
-          </div>
-
         </div>
-
-        <hr>
-
         <div class="terms">
-
-          <h4>Terms And Conditions</h4>
-
-          <h4>Privacy Policy</h4>
-
+            <h4 >Terms And Conditions</h4>
+            <h4 >Privacy Policy</h4>
         </div>
+    </div>
+</footer>
+<!--End of Footer-->
+</section>
 
-      </div>
-
-    </footer>
-
-  </section>
-
-
-
-  <!-- Validation Modal -->
+  <!-- Validation Modal1 -->
 
   <div id="validationModal" class="modal">
 
@@ -400,13 +284,81 @@
 
       <span class="close" onclick="document.getElementById('validationModal').style.display='none'">&times;</span>
 
-      <p>Please fill out all fields: 'To Whom', 'Message', choose a Theme, and select at least one Tag.</p>
+      <p>"Please specify 'To Whom' the message is addressed."</p>
 
       <button onclick="document.getElementById('validationModal').style.display='none'">OK</button>
 
     </div>
 
   </div>
+
+  <!-- Validation Modal2 -->
+
+  <div id="validationModal2" class="modal">
+
+    <div class="modal-content">
+
+      <span class="close" onclick="document.getElementById('validationModal2').style.display='none'">&times;</span>
+
+      <p>"The 'Message' field cannot be empty."</p>
+
+      <button onclick="document.getElementById('validationModal2').style.display='none'">OK</button>
+
+    </div>
+
+  </div>
+  
+  <!-- Validation Modal3 -->
+
+  <div id="validationModal3" class="modal">
+
+    <div class="modal-content">
+
+      <span class="close" onclick="document.getElementById('validationModal3').style.display='none'">&times;</span>
+
+      <p>"Please choose a Theme."</p>
+
+      <button onclick="document.getElementById('validationModal3').style.display='none'">OK</button>
+
+    </div>
+
+  </div>
+
+  <!-- Validation Modal4 -->
+
+  <div id="validationModal4" class="modal">
+
+    <div class="modal-content">
+
+      <span class="close" onclick="document.getElementById('validationModal4').style.display='none'">&times;</span>
+
+      <p>"Select at least one Tag."</p>
+
+      <button onclick="document.getElementById('validationModal4').style.display='none'">OK</button>
+
+    </div>
+
+  </div>
+
+  
+  <!-- Validation Modal5 -->
+
+  <div id="validationModal5" class="modal">
+
+    <div class="modal-content">
+
+      <span class="close" onclick="document.getElementById('validationModal5').style.display='none'">&times;</span>
+
+      <p>"Please fill out the form completely"</p>
+
+      <button onclick="document.getElementById('validationModal5').style.display='none'">OK</button>
+
+    </div>
+
+  </div>
+
+
+
 
 
 

@@ -43,21 +43,60 @@ document.getElementById("messageForm").addEventListener("submit", function(event
     .map(tag => tag.getAttribute("data-tag-id"));
 
 
+ // Validate form fields
 
-  // Validate form fields
+    if (!toWhom && !message && !themeId && selectedTags.length === 0) {
 
-  if (!toWhom || !message || !themeId || selectedTags.length === 0) {
+      
+  
+      document.getElementById('validationModal5').style.display = 'block';
+  
+      return; 
+  
+    } 
+  
+  if (!toWhom ) {
 
-    // Show validation modal
+    
 
     document.getElementById('validationModal').style.display = 'block';
 
-    return; // Exit the function if validation fails
+    return; 
 
-  }
+  } 
 
+  if ( !message) {
 
+   
 
+    document.getElementById('validationModal2').style.display = 'block';
+
+    return; 
+
+  } 
+
+  if ( !themeId ) {
+
+  
+
+    document.getElementById('validationModal3').style.display = 'block';
+
+    return; 
+
+  } 
+
+  if (selectedTags.length === 0) {
+
+  
+
+    document.getElementById('validationModal4').style.display = 'block';
+
+    return; 
+  } 
+
+  
+
+  
   // Show confirmation modal
 
   document.getElementById('confirmationModal').style.display = 'block';
@@ -72,7 +111,7 @@ document.getElementById("messageForm").addEventListener("submit", function(event
 
     // Construct the request body
 
-   const postData = {
+    const postData = {
 
       "toWhom": toWhom,
 

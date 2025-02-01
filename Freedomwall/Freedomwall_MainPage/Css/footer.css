@@ -14,8 +14,8 @@ footer{
 }
 
 .rows .listnav{
-    font-family: 'Poppins';
-    padding: 0 2.2rem 10rem 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 2.2rem 14rem 0;
 }
 .about .logos{
    display: flex;
@@ -23,7 +23,7 @@ footer{
 .logos h2{
     padding: 0.7rem 0rem 0rem 0.3rem;
     color: white;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
 .about .flogo{
@@ -34,13 +34,13 @@ footer{
 .about p{
     padding-top: 0.5rem;
     max-width: 25rem;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     margin-right: 10rem;
 }
 
 .list{
-  margin-right: 9rem;
-  font-family: 'Poppins';
+  margin-right: 12rem;
+  font-family: 'Poppins', sans-serif;
   margin-top: -100%;
 }
 
@@ -63,7 +63,7 @@ footer{
 }
 
 .getintouch h3{
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     padding: 0rem 4rem 1.2rem 0rem;
 }
