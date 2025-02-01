@@ -1,0 +1,118 @@
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    footer {
+        padding-top: 1.5rem;
+        height: auto;
+    }
+
+    .rows {
+        flex-direction: column;
+        margin: 0;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .about p, .list, .getintouch {
+        margin: 0;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .logos h2 {
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+        margin: 5% 0 0 5%;
+    }
+
+    .logos {
+        margin: 0 30% 0 30%;
+    }
+    
+    
+ 
+    .list a {
+       
+        margin: 0.5rem .5rem;
+        
+    }
+
+    .list{
+        margin: -50% 0 0 0;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .listnav{
+        font-size: large;
+        
+    }
+    .parentnav h3{
+        margin: 5% 0 0 10%;
+    }
+
+    
+    .getintouch h3{
+        margin: 10% 0 0 17% ;
+        text-wrap: nowrap;
+    }
+
+    .social a i {
+        font-size: 1.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .terms {
+        flex-direction: column;
+        padding: 1rem 0 1rem 0;
+        text-align: center;
+        display: flex;
+    }
+
+    .terms h4 {
+        font-size: 1rem;
+    }
+
+    
+    
+}
+
+/* Media Query for Tablets */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    footer {
+        padding-top: 2rem;
+        height: auto;
+    }
+
+    .rows {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .about p, .list, .getintouch {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .logos h2 {
+        font-size: 1.4rem;
+    }
+
+    .list a {
+        margin-right: 2em;
+        font-size: 0.9rem;
+    }
+
+    .social a i {
+        font-size: 1.8rem;
+    }
+
+    .terms {
+        flex-direction: row;
+        padding: 1.5rem;
+    }
+
+    .terms h4 {
+        font-size: 1.2rem;
+        
+    }
+}
